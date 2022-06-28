@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+    width: 100%;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+button {
+    background-color: orange;
+    border: 0px solid black;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+
+}
+
+button:hover {
+    background-color: #c79900;
+    transition: all 0.4s linear;
+}
+
+.title { /*todos los titulos*/
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.section{/*todo*/
+    
+    background-color:white;
+
+}
+.section-conteiner {/*todo*/
+  
+    background-color:rgb(138, 9, 9);
+    
+  }
+
+.header-container {/*donde esta todo el*/
+  
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+
+}
+
+.header{
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;/*tira a los lados*/
+    align-items: center;
+    padding: 0px 80px 0px 50px;
+    background-color: rgb(138, 9, 9);
+}
+
+.logo-conteiner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color:rgb(138, 9, 9);
+}
+
+.logo-conteiner img{
+    height: 100%;
+    
+}
+
+.busqueda-sesion-compra{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.busqueda input{
+    width:400px;
+    height: 40px;
+   
+    
+}
+.compra{
+    width: 40px;
+}
+.compra i{
+    font-size: 20px;
+}
+
+.navbar{
+    background-color: orange;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 70px 0px; */
+ 
+}
+
+.navbar-list{
+    background-color: #c79900;
+    width: 95%;
+    max-width: 1300px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+.navbar-list li a{
+    color: black;
+
+}
+
+.anuncio{
+    
+    background-color: aqua;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.anuncio a{
+       
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.imagenes-productos{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+    align-items: center;
+    
+    
+    
+    background-color: violet;
+    width:100%;
+    height: 350px;
+    position: relative;
+}
+.imagenes-productos > div{
+
+    position: absolute;
+    width: 600px;
+    height: 300px;
+}
+
+
+.img a img {
+    
+    width: 100%;
+    width: 600px;
+    height: 300px;
+    
+}
+
+.img:nth-child(1)  {
+    opacity: 0;
+    animation: animation2 4s 1s infinite backwards linear;
+    
+    /* animation-name: animation;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    
+    transition-timing-function:cubic-bezier(0.5,0.14,0.73,0.90); 
+    transition-delay: 1s;
+    cubic-bezier(0.40,0.20,0.80,0.20);
+} */
+}
+.img:nth-child(2){
+    
+    opacity: 0;
+    animation: animation2 4s  3s infinite linear;
+}
+.img:nth-child(3){
+    
+    opacity: 0;
+    animation: animation2 4s 2s infinite  linear;
+    
+}
+
+/************************/
+
+.section-conteiner2{
+    width: 100%;
+    background-color: aquamarine;
+}
+.imagenes-marcas{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;   
+    background-color: blue;
+    width:700px;
+    height: 120px;
+    position: relative;
+    gap: 20px;
+    
+}
+
+
+.img2 a img {
+
+    padding: 0;
+    width: 150px;
+    
+    height: 80px;
+    
+}
+
+.imagenes-marcas{
+    animation:animation 5s 1s infinite cubic-bezier(.13,.80,.73,.12) ;
+    
+}
+/*************************/
+
+/*footer*/
+.footer{
+    background-color: aqua;
+    display: grid;
+    
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+
+}
+
+.elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****************************************/
+
+
+@keyframes animation{
+    0%{
+        
+        
+        opacity: 1;
+        left: -700px;
+        
+        
+        
+    }
+    100%{
+        opacity: 1;
+        z-index: 99;
+        left: calc(100% );
+        
+        
+    }
+}
+
+@keyframes animation2{
+    0%{
+        transform: scale(600px,300px);
+        opacity: 1;
+    }
+    100%{
+        transform: scalex(600px);
+        transform: scaley(300px);
+        opacity: 1;
+        z-index: 99;
+       
+    }
+}
