@@ -146,14 +146,15 @@ button:hover {
 
 .anuncio{
     
-    background-color: aqua;
+    background-color: black;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    
 }
 .anuncio a{
-       
+    color: white;
     font-size: 2rem;
     font-weight: 600;
 }
