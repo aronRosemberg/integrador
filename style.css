@@ -356,10 +356,10 @@ button:hover {
 
 @keyframes animation3{
     0%{
-        left: -72px;
+        left: -65px;
     }
     100%{
-        left: calc(100% - 390px);
+        left: calc(100% - 380px);
     }
 
 
