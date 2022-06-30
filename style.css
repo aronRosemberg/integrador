@@ -356,10 +356,10 @@ button:hover {
 
 @keyframes animation3{
     0%{
-        left: -320px;
+        left: -72px;
     }
     100%{
-        left: calc(100% - 160px);
+        left: calc(100% - 390px);
     }
 
 
@@ -515,7 +515,7 @@ button:hover {
         height: 80px;
        
         
-        animation:animation3 4s 1s infinite cubic-bezier(.13,.80,.73,.12); 
+        animation:animation3 3s 1s infinite alternate linear; 
     }
     
 
