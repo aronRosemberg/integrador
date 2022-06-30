@@ -486,6 +486,10 @@ button:hover {
         display: flex;
 
     }
+    .anuncio{
+        text-align: center;
+    }
+
 /*section-conteiner1 imagenes-productos*/
 
     .section-conteiner1 {
@@ -493,7 +497,7 @@ button:hover {
         height: 300px;
     }
     .imagenes-productos{
-         height: 100%;  
+        height: 100%;  
     }
 /*************************/
     .section-conteiner2{
@@ -515,8 +519,6 @@ button:hover {
         gap: 10px;
         width: 320px;
         height: 80px;
-       
-        
         animation:animation3 3s 1s infinite alternate linear; 
     }
     
