@@ -18,18 +18,57 @@
                 </div>
                 <div class="busqueda-sesion-compra">
     
-                        <div class="busqueda">
-                            <label for="busqueda"></label>
-                            <input type="search" placeholder="   Buscador">
-                        </div> 
-                        <div class="botones-header">
-                            <button class="iniciar-secion button">
-                                <i class="fa-regular fa-circle-user"></i> INICIAR SESION
-                            </button>
-                            <button class="compra" >
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                        </div>
+                <div class="busqueda">
+                    <label for="busqueda"></label>
+                    <input type="search" placeholder="   Buscador">
+                </div> 
+
+                <div class="botones-header">
+                    <button class="iniciar-secion button">
+                        
+                        <label  for="login-button" class="login-button">
+                            <i class="fa-regular fa-circle-user"></i> INICIAR SESION
+                        </label>
+                        <input type="checkbox"  id="login-button">  
+                        
+                        <div class="login-contenedor">
+                            <div class="login">
+                                <label  class="cerrar elem" for="login-button" ><i class="fa-solid fa-xmark"></i></label>
+                                <div class="elem">
+                                    <h2  >Iniciar sesion</h2>
+                                    <p  >Para comenzar ingresa tu email</p>
+                                </div>
+                                <div class="elem">
+                                    <input class="input"  type="email " placeholder=" Email">
+                                    <input class="input"  type=" password" placeholder="  Contrasenia">
+                                    <p >Campo requerido</p>
+                                </div>
+                                
+                                <div class="elem">
+                                    <p  class="opciones">CONTINUAR</p>
+                                    <p  class="opciones">CREAR CUENTA</p>
+                                </div>   
+                                
+                                <div  class=" elem" ></div>
+                                <div class="elem"><p>Si tenes problemas contactarte <br> con soporte al 1167890123</p></div>
+                                
+                                
+                            </div>
+                        </div>    
+                    </button>
+
+                    <button class="compra" >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                
+                <!-- <div class="botones-header">
+                    <button class="iniciar-secion button">
+                        <i class="fa-regular fa-circle-user"></i> INICIAR SESION
+                    </button>
+                    <button class="compra" >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>  -->
 
                 </div>
             </header>
@@ -42,9 +81,9 @@
                 <input type="checkbox" id="toggle-menu" />
                 <ul class="navbar-list">
                   <li><a href="#productos">Productos</a></li>
-                  <li><a href="#arma">Arma tu PC</a></li>
                   <li><a href="#ayuda">Ayuda</a></li>
                   <li><a href="#marcas">Marcas Sponsor</a></li>
+                  <li><a href="#redes">Redes Sociales</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,15 +94,15 @@
             </div>
         </div>    
     
-        <div class="section-conteiner1 section">
-                <div class="imagenes-productos">
+        <div class="section-conteiner1 section" >
+                <div class="imagenes-productos" id="productos">
                     <div class=" img"><a href="#" class="amg"><img src="./img/furi para editar.png" alt="" class="smg"></a></div>
                     <div class=" img "><a href="#" class="amg"><img src="./img/narvo editado.png" alt="" class="smg"></a></div>
                     <div class=" img"><a href=".#" class="amg"><img src="./img/xpg editado.png" alt="" class="smg"></a></div>
                 </div>
         </div>
     
-        <div class="section-conteiner2 section">
+        <div class="section-conteiner2 section" id="marcas">
                 <div class="imagenes-marcas">
                     <div class=" img2"><a href="#"><img src="./img/marcas auspisiantes/acer.jpg" alt=""></a></div>
                     <div class=" img2"><a href="#"><img src="./img/marcas auspisiantes/intel.png" alt=""></a></div>
@@ -76,7 +115,7 @@
 
     
        <div class="footer  footer-section section">
-            <div class="ayuda elemento">
+            <div class="ayuda elemento" id="ayuda">
                 <h3 class="title">Ayuda</h3>
                 <p>Si tenes sugerencias o comentarios</p>
                 <button class="button"> Contactanos</button>
@@ -85,7 +124,7 @@
                 <button  class="button"><a href="">!Trabaja con nosotros!</a></button>
                 <a href="#" class="boton-arrepentimiento">Boton de arrepentimiento</a>
             </div>
-            <div class="redes elemento">
+            <div class="redes elemento" id="redes">
                 <h3 class="title">Seguimos en </h3>
                 <div class="footer-social">
                     <i class="fab fa-twitter"></i>
