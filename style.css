@@ -585,7 +585,25 @@ button:hover {
     .botones-header > button{
         border-radius: 10px;
     }
+    /**********************/
+    
+    .login-contenedor{
+        opacity: 1;
+        top: 50%;
+        padding: 0;
+        margin: 0;
+        background-color: #fd611a;
+    }
+    .login{ 
+        
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
 
+
+
+    /**************************************/
     .navbar-list {
         position: absolute;
         
