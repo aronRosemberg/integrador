@@ -309,9 +309,15 @@ button:hover {
     left: 0; */
 }
 /*************************************/
-#login-button:active{
-    background-color: aliceblue;
+.login-button:active{
+    background-color: white;
+    color: black;
 }
+
+
+
+
+
 #continuar:checked ~ .registro-contenedor{
     display: flex;
     flex-wrap: wrap;
@@ -667,7 +673,7 @@ button:hover {
     
     .login-contenedor{
         
-        min-height:700px ;
+        min-height:800px ;
         margin: 0;
         
     }
