@@ -39,14 +39,51 @@
                                     <p  >Para comenzar ingresa tu email</p>
                                 </div>
                                 <div class="elem">
-                                    <input class="input"  type="email " placeholder=" Email">
-                                    <input class="input"  type=" password" placeholder="  Contrasenia">
+                                    
+                                    <form>
+                                        <label for="mail"></label>
+                                        <input class="input" id="mail" type="email" placeholder=" Email">
+                                        
+                                        <label for="pass"></label>
+                                        <input class="input"  id="pass" type="password" placeholder="  Contrasenia">
+                                    </form>
+                                   
                                     <p >Campo requerido</p>
                                 </div>
                                 
                                 <div class="elem">
                                     <p  class="opciones">CONTINUAR</p>
-                                    <p  class="opciones">CREAR CUENTA</p>
+
+
+                                    <!-- ***********************************************-->
+                                    <label class="opciones" for="continuar">CREAR CUENTA</label>
+                                    <input id="continuar" type="checkbox">
+                                    <div class="registro-contenedor">
+                                        <div class="registro">
+                                            <label  class="cerrar elem" for="continuar" ><i class="fa-solid fa-xmark"></i></label> 
+                                            <div class="elem">
+                                                <h2 >registrarse</h2>
+                                                <p >ingresa tus datos para crear tu cuenta</p>
+                                            </div>
+                                          
+                                            <div  class="elem" class="nombre-apeli">
+                                                <input  class="input" type="text" placeholder="  Nombre">
+                                                <input  class="input" type="text" placeholder="  Apellido">
+                                            </div>
+                                            <input class="elem input" type="email" placeholder=" Email">
+                                            <div class=" telf elem datos">
+                                                <input type="text"   class="datos-telf " placeholder=" Codigo de area">
+                                                <input type="number" class="datos-telf" placeholder="  Numero de telefono">
+                                            </div>
+                                            <div class="elem contra datos">
+                                                <input type="password" class="datos-contra" placeholder="Contrasenia">
+                                                <input type="password" class="datos-contra" placeholder=" Repetir Contrasenia">
+                                            </div>
+                                            <p class="elem registro-boton">registrarme</p>
+
+                                        </div>
+                                    </div>
+                                    
                                 </div>   
                                 
                                 <div  class=" elem" ></div>

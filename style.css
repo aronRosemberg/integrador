@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
 
 *{
-   
+
     margin: 0;
     padding: 0;
     list-style: none;
@@ -120,10 +120,6 @@ button:hover {
     gap: 30px;
 }
 /**********************************/
-.iniciar-secion{
-    
-    background-color: #fd611a;
-}
 
 #login-button{
     display: none;
@@ -140,11 +136,11 @@ button:hover {
     display: none;
     position: absolute;
     left: 0;
-    top: 100px;
+    top: 0;
     width: 100%;
-    height: 90vh;
-    opacity: 0.9;
-    background-color: black;
+    height: 100vh;
+    
+    background-color:rgba(0, 0, 0, 0.4);
 
 } 
 
@@ -187,7 +183,7 @@ button:hover {
     gap: 5px;
 }
 .opciones{
-    
+    cursor: pointer;
     border: 1px solid gray;
     padding: 4px 0 ;
 }
@@ -203,19 +199,81 @@ button:hover {
     position: absolute;
     top: 15px;
     right: 15px;
+    cursor: pointer;
+   
+
 }
 .cerrar{
     width: 20px;
     height: 20px;
     text-align: center;
+    z-index: 3;
+
 }
 
 .cerrar i{
     width: 100%;
     height: 100%;
+}/***************************************/
+#continuar{
+    display: none;
+}
+.registro-contenedor{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: aqua;
+}
+.registro{
+   padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(169, 22, 22);
+    gap: 20px;
+    color: white;
+    border: 2px solid white;
+
+}
+.datos{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 30px;
+
+}
+.datos-telf:nth-child(1){
+    width: 30%;
+}.datos-telf:nth-child(2){
+    width: 70%;
+}
+.datos-contra:nth-child(1){
+    width: 50%;
+}.datos-contra:nth-child(2){
+    width: 50%;
 }
 
-/*************/
+.registro-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    background-color:rgba(143, 141, 141, 0.988);
+    height: 40px;
+    color: white;
+}
+
+
+
+/***************************/
 .busqueda input{
     width:400px;
     height: 40px;
@@ -234,6 +292,7 @@ button:hover {
 #login-button:checked ~ .login-contenedor{
     
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     /* position: absolute;
@@ -251,6 +310,23 @@ button:hover {
 
     
 }
+#continuar:checked ~ .registro-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+
+
+
+
+
+
 
 
 /********************************************************/
@@ -588,8 +664,6 @@ button:hover {
     /**********************/
     
     .login-contenedor{
-        opacity: 1;
-        top: 50%;
         
         margin: 0;
         
@@ -598,12 +672,20 @@ button:hover {
         
         
         
-        width: 100%;
+        width: 90%;
     }
 
 
 
     /**************************************/
+
+
+
+
+
+
+
+    /********************************/
     .navbar-list {
         position: absolute;
         
@@ -614,7 +696,7 @@ button:hover {
         width: 100%;
         height: 140px;
         display: none;
-        z-index: 9999;
+        z-index: 999;
         opacity: 1;
         gap: 5px;
     }
