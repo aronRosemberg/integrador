@@ -146,7 +146,7 @@ button:hover {
 
 
 .login{ 
-    z-index: 9999;
+    
     color: black;
     max-width: 500px;
     padding: 0 40px;
@@ -229,7 +229,7 @@ button:hover {
     background-color: aqua;
 }
 .registro{
-    z-index: 99999;
+   
    padding: 0px 50px;
     display: flex;
     flex-direction: column;
@@ -673,15 +673,15 @@ button:hover {
     /**********************/
     
     .login-contenedor{
-        
+        z-index: 99999;
+        opacity: 1;
         min-height:800px ;
         margin: 0;
         
     }
-    .login{ 
-        
-        
-        
+    .login{
+        z-index: 99999; 
+        opacity: 1;
         width: 90%;
     }
 
