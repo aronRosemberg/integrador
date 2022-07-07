@@ -449,6 +449,7 @@ button:hover {
 /************************/
 
 .section-conteiner2{
+    overflow: hidden;
     width: 100%;
     background-color: white;
 }
