@@ -521,6 +521,7 @@ button:hover {
 background: linear-gradient(90deg, rgba(228,50,74,1) 5%, rgba(225,237,16,1) 22%, rgba(14,102,9,1) 33%, rgba(31,29,226,1) 46%, rgba(71,15,131,1) 56%);
     padding: 20px 0;
     border: 1px solid gold;
+    border-radius: 25px;
 }
 
 .card img {
