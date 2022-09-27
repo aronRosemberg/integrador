@@ -923,6 +923,7 @@ background: linear-gradient(90deg, rgba(228,50,74,1) 5%, rgba(225,237,16,1) 22%,
         display: grid;
         padding: 10px 0;
         gap: 5px ;
+        background-repeat:repeat-y ;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20px 1fr 1fr;
     }
