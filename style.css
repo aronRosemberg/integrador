@@ -9,6 +9,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
+    
 
 }
 html{
@@ -493,9 +494,9 @@ button:hover {
     flex-direction: column;
     width: 100%;
     
-    background: rgb(240,37,65);
-    background: linear-gradient(90deg, rgba(240,37,65,1) 16%, rgba(221,21,231,1) 43%, rgba(17,35,158,1) 73%, rgba(29,226,213,1) 90%);
-    background: darkblue;
+   
+    background-image: url(./img/fondocirculosyequis.jpg) ;
+
     gap: 30px;
 
 }
@@ -507,6 +508,7 @@ button:hover {
     align-items: center;
     width: 90%;
     flex-wrap: wrap;
+    max-width: 1300px;
     
    
 }
@@ -545,11 +547,67 @@ background: linear-gradient(90deg, rgba(228,50,74,1) 5%, rgba(225,237,16,1) 22%,
 .titulo{
     color:gold;
 }
-.precio{
+.precios{
+    display: flex;
+    gap: 20px;
     font-weight: 700;
-    font-size: 1.2rem;
-    color:white;
+    align-items: center;
 
+
+}
+
+.precios{
+    font-size: 2rem;
+    color: black;
+}
+
+.precio1{
+    color: red;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+.precio2{
+
+    font-size: 1.4rem;
+    color:gold;
+}
+/***********************************************************/
+.contacto-section{
+    color: brown;
+    
+    
+}
+.cantacto-contents{
+    margin: 0 120px;
+    
+    display: grid;
+    background-color: white;
+    
+    
+    grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr 1px 1fr;
+    
+}
+.contacto-element{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+
+.remarcar{
+    font-weight: 750;
+    
+}
+
+.linea-div{
+    color: gray;
+    height: 70%;
+    margin: auto 0;
+    background-color: gray;
 }
 /*************************/
 
